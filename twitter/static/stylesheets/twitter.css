@@ -107,6 +107,45 @@ html, body {
   margin: 0;
   float: left;
   height: 1000px; }
+  .userfeed .tweet-wrapper {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 65px;
+    display: flex; }
+    .userfeed .tweet-wrapper .poster-pic-wrapper {
+      float: left;
+      width: 45px; }
+      .userfeed .tweet-wrapper .poster-pic-wrapper .poster-pic {
+        background-color: #657786;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%; }
+    .userfeed .tweet-wrapper .post-info {
+      font-size: 1em;
+      float: left;
+      width: calc(100% - 80px);
+      margin-left: 10px; }
+      .userfeed .tweet-wrapper .post-info .poster-name {
+        color: #14171A;
+        font-weight: bold;
+        float: left;
+        margin: 0 2px; }
+      .userfeed .tweet-wrapper .post-info .poster-username, .userfeed .tweet-wrapper .post-info .time-posted {
+        color: #657786;
+        float: left;
+        margin: 0 2px; }
+      .userfeed .tweet-wrapper .post-info .post-content {
+        width: 100%;
+        overflow: hidden;
+        color: #14171A;
+        overflow-wrap: break-word;
+        line-height: 1.5em; }
+    .userfeed .tweet-wrapper .post-settings {
+      width: 25px;
+      text-align: center; }
 
 .right {
   background-color: #FFF;
