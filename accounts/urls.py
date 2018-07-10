@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from views import login, userfeed
+from views import login, userfeed, registration, signup
 
 urlpatterns = [
     url(r'^login/$', login, name='login'),
-    url(r'^userfeed/$', userfeed, name='userfeed')
+    url(r'^userfeed/$', userfeed, name='userfeed'),
+    url(r'^$', registration, name="registration"),
+    url(r'^signup/$', signup, name='signup'),
 ]

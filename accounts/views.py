@@ -10,3 +10,9 @@ def login(request):
 
 def userfeed(request):
 	return render(request, 'userfeed.html', {})
+
+def registration(request):
+	return render(request, 'registration.html', {})
+
+def signup(request):
+	return render(request, 'signup.html', {})

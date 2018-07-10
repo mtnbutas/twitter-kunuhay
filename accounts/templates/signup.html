@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
 
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login on Twitter</title>
+
+	<link href="{% static 'stylesheets/signup.css' %}" rel="stylesheet">
+
+</head>
+<body>
+	<div class="login-nav">
+		<div class="login-container">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+		</div>
+	</div>
+
+	<div class="login-container" style="border: 1px solid rgba(0,0,0,0.15)">
+		<img src="{% static 'images/Twitter_Logo_Blue.png' %}" height="40" width="40" style="margin-left: auto; margin-right: auto; display: block; margin-top: 5px;"></img>
+		<form>
+			<h2>Create your account</h2>
+			<input type="text" id="name" name="name" placeholder="Name"/>
+			<input type="password" id="password" name="phone-or-email" placeholder="Phone or Email"/>
+			<button type="submit" style="float: right;">Log in</button>
+			<input type="checkbox"/> Remember me · 
+			<a href="#">Forgot password?</a>
+		</form>
+	</div>
+
+</body>
+</html>
