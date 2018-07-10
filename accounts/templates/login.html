@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login on Twitter</title>
+
+	<link href="{% static 'stylesheets/login.css' %}" rel="stylesheet">
+
+</head>
+<body>
+	<div class="login-nav">
+		<div class="login-container">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+		</div>
+	</div>
+
+	<div class="login-container" style="border: 1px solid rgba(0,0,0,0.15)">
+		<form>
+			<h2>Log in to Twitter</h2>
+			<input type="text" id="email-or-username" name="email-or-username" placeholder="Email or username"/>
+			<input type="password" id="password" name="password" placeholder="Password"/>
+			<button type="submit">Log in</button>
+			<input type="checkbox"/> Remember me · 
+			<a href="#">Forgot password?</a>
+		</form>
+		<div class="login-footer">
+			<div>
+				New to Twitter? <a href="#">Sign up now »</a><br/>
+				Already using Twitter via text message? <a href="#">Activate your account »</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

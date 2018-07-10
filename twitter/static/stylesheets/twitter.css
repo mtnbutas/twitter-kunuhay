@@ -1,0 +1,100 @@
+html, body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #E1E8ED; }
+
+.nav {
+  background-color: #FFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 10px 0;
+  top: 0;
+  position: fixed; }
+  .nav .nav-link-container {
+    background-color: transparent;
+    max-width: 1190px;
+    width: 90%;
+    min-width: 500px;
+    margin: 0 auto;
+    font-size: 0.9em; }
+  .nav a {
+    margin: 0;
+    padding: 16px 20px;
+    float: left;
+    color: #657786;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-decoration: none; }
+    .nav a:hover {
+      color: #0084B4; }
+
+.container {
+  background-color: transparent;
+  max-width: 1190px;
+  width: 94%;
+  min-width: 500px;
+  margin: 55px auto 20px auto;
+  font-size: 0.9em; }
+
+.left {
+  background-color: transparent;
+  width: 24%;
+  margin: 0 1% 0 0;
+  padding: 0;
+  float: left; }
+  .left .profilecard {
+    background-color: #FFF;
+    width: 100%;
+    height: 216px;
+    margin: 0;
+    padding: 0; }
+    .left .profilecard .header {
+      background-color: #14171A;
+      width: 100%;
+      height: 100px; }
+    .left .profilecard .userpic {
+      background-color: #0084B4;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      margin-top: -32px;
+      margin-left: 10px;
+      margin-right: 10px;
+      float: left; }
+    .left .profilecard .name-username-div {
+      margin: 0;
+      padding: 2px;
+      display: inline-block; }
+      .left .profilecard .name-username-div .name {
+        flex: 1;
+        color: #14171A;
+        text-decoration: none;
+        font-size: 1.7em; }
+        .left .profilecard .name-username-div .name:hover {
+          text-decoration: underline; }
+      .left .profilecard .name-username-div .username {
+        flex: 1;
+        color: #657786;
+        text-decoration: none;
+        font-size: 0.8em; }
+        .left .profilecard .name-username-div .username:hover {
+          text-decoration: underline; }
+
+.userfeed {
+  background-color: #FFF;
+  width: 50%;
+  margin: 0;
+  float: left;
+  height: 1000px; }
+
+.right {
+  background-color: #FFF;
+  width: 24%;
+  margin: 0 0 0 1%;
+  float: right;
+  height: 300px; }
+
+/*# sourceMappingURL=twitter.css.map */

@@ -1,0 +1,153 @@
+$font-stack: 'Helvetica Neue', sans-serif;
+$twitter-dark-blue: #0084B4;
+$twitter-logo-blue: #00ACED;
+$twitter-light-blue: #1DCAFF;
+$twitter-background: #E1E8ED;
+$twitter-gray: #657786;
+$twitter-light-gray: #F5F8FA;
+$twitter-black: #14171A;
+$white: #FFF;
+
+
+html, body {
+	font-family: $font-stack;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: $twitter-background;
+}
+
+.nav {
+  background-color: $white;
+  border-bottom: 1px solid rgba(0,0,0,0.20);
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 10px 0;
+  top: 0;
+  position: fixed;
+
+  .nav-link-container {
+    background-color: transparent;
+    max-width: 1190px;
+    width: 90%;
+    min-width: 500px;
+    margin: 0 auto;
+    font-size: 0.9em;
+  }
+    
+  a {
+    margin: 0;
+    padding: 16px 20px;
+    float: left;
+    color: $twitter-gray;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-decoration: none;
+    
+    &:hover {
+      color: $twitter-dark-blue;
+    }
+  }
+}
+
+.container {
+  background-color: transparent;
+  max-width: 1190px;
+  width: 94%;
+  min-width: 500px;
+  margin: 55px auto 20px auto;
+  font-size: 0.9em;
+}
+
+.left {
+  background-color: transparent;
+  width: 24%;
+  margin: 0 1% 0 0;
+  padding: 0;
+  float: left;
+
+  .profilecard {
+    background-color: $white;
+    width: 100%;
+    height: 216px;
+    margin: 0;
+    padding: 0;
+
+    .header {
+      background-color: $twitter-black;
+      width: 100%;
+      height: 100px;
+      
+      .img {
+
+      }
+    }
+
+    .userpic {
+      background-color: $twitter-dark-blue;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      margin-top: -32px;
+      margin-left: 10px;
+      margin-right: 10px;
+      float: left;
+
+      .img {
+
+      }
+    }
+
+    .name-username-div {
+      margin: 0;
+      padding: 2px;
+      display: inline-block;
+      // width: calc(100% - 92px);
+      // float: left;
+
+      .name {
+        flex: 1;
+        color: $twitter-black;
+        text-decoration: none;
+        font-size: 1.7em;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .username {
+        flex: 1;
+        color: $twitter-gray;
+        text-decoration: none;
+        font-size: 0.8em;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    
+  }
+ 
+}
+
+.userfeed {
+  background-color: $white;
+  width: 50%;
+  margin: 0;
+  float: left;
+  height: 1000px;
+
+  .tweet {
+    
+  }
+}
+
+.right {
+  background-color: $white;
+  width: 24%;
+  margin: 0 0 0 1%;
+  float: right;
+  height: 300px;
+}
