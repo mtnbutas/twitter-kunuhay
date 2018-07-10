@@ -10,11 +10,11 @@ $white: #FFF;
 
 
 html, body {
-	font-family: $font-stack;
-	font-size: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: $twitter-background;
+  font-family: $font-stack;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $twitter-background;
 }
 
 .nav {
@@ -100,10 +100,8 @@ html, body {
 
     .name-username-div {
       margin: 0;
-      padding: 2px;
+      padding: 3px;
       display: inline-block;
-      // width: calc(100% - 92px);
-      // float: left;
 
       .name {
         flex: 1;
@@ -120,12 +118,40 @@ html, body {
         flex: 1;
         color: $twitter-gray;
         text-decoration: none;
-        font-size: 0.8em;
+        font-size: 1em;
 
         &:hover {
           text-decoration: underline;
         }
       }
+    }
+
+    .stats {
+      width: 90%;
+      margin: 18px auto 0 auto;
+      padding: 0;
+      display: flex;
+
+      .num-of-tweets, .num-of-following, .num-of-followers {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+
+        span {
+          font-size: 0.9em;
+          font-weight: 600;
+          color: $twitter-gray;
+        }
+
+        .numbers {
+          font-size: 1.3em;
+          font-weight: 600;
+          color: $twitter-logo-blue;
+        }
+
+      }
+
     }
     
   }

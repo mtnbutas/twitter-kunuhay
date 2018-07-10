@@ -66,7 +66,7 @@ html, body {
       float: left; }
     .left .profilecard .name-username-div {
       margin: 0;
-      padding: 2px;
+      padding: 3px;
       display: inline-block; }
       .left .profilecard .name-username-div .name {
         flex: 1;
@@ -79,9 +79,27 @@ html, body {
         flex: 1;
         color: #657786;
         text-decoration: none;
-        font-size: 0.8em; }
+        font-size: 1em; }
         .left .profilecard .name-username-div .username:hover {
           text-decoration: underline; }
+    .left .profilecard .stats {
+      width: 90%;
+      margin: 18px auto 0 auto;
+      padding: 0;
+      display: flex; }
+      .left .profilecard .stats .num-of-tweets, .left .profilecard .stats .num-of-following, .left .profilecard .stats .num-of-followers {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .left .profilecard .stats .num-of-tweets span, .left .profilecard .stats .num-of-following span, .left .profilecard .stats .num-of-followers span {
+          font-size: 0.9em;
+          font-weight: 600;
+          color: #657786; }
+        .left .profilecard .stats .num-of-tweets .numbers, .left .profilecard .stats .num-of-following .numbers, .left .profilecard .stats .num-of-followers .numbers {
+          font-size: 1.3em;
+          font-weight: 600;
+          color: #00ACED; }
 
 .userfeed {
   background-color: #FFF;
