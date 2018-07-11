@@ -7,6 +7,8 @@ $twitter-gray: #657786;
 $twitter-light-gray: #F5F8FA;
 $twitter-black: #14171A;
 $white: #FFF;
+$retweeted: #91DC5A;
+$favorited: #FAC917;
 
 
 html, body {
@@ -15,6 +17,14 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: $twitter-background;
+}
+
+button { 
+  cursor: pointer;
+  &:disabled { 
+    cursor: not-allowed;
+    background-color: rgba(192,192,192,0.3);
+  }
 }
 
 .nav {
@@ -163,16 +173,69 @@ html, body {
   width: 50%;
   margin: 0;
   float: left;
-  height: 1000px;
+  
+  .new-tweet-field {
+    background-color: $twitter-light-blue;
+    padding: 10px 30px;
+    overflow: auto; 
+
+    textarea {
+      font-family: $font-stack;
+      font-size: 1em;
+      border-radius: 5px;
+      height: 1.2em;
+      width: calc(100% - 20px);
+      margin: 0 auto;
+      padding: 8px;
+      transition: all 0.5s ease;
+      
+      &:focus {
+        height: 4em;
+        border: 1px solid $twitter-dark-blue;
+
+        &::placeholder {
+          color: $twitter-gray;
+        }
+      }
+
+      &::placeholder {
+        color: $twitter-logo-blue;
+      }
+    }
+
+    button[type=submit] {
+        display: none;
+        margin-top: 15px;
+        background-color: $twitter-dark-blue;
+        color: $white;
+        font-size: 0.9em;
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 10px 20px;
+        outline: none !important;
+        border: none;
+        float: right;
+
+        &:disabled { 
+          cursor: not-allowed;
+          background-color: $twitter-gray;
+        }
+    }
+  }
 
   .tweet-wrapper {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-    padding: 8px;
+    border-bottom: 1px solid $twitter-background;
+    padding: 13px 10px 10px 10px;
     margin: 0;
     overflow-y: auto;
     overflow-x: hidden;
     min-height: 65px;
-    display: flex;
+    cursor: pointer;
+    // display: flex;
+
+    &:hover {
+      background-color: $twitter-light-gray;
+    }
 
     .poster-pic-wrapper {
       float: left;
@@ -219,8 +282,104 @@ html, body {
     }
 
     .post-settings {
-      width: 25px;
+      width: 100%;
+      clear: right;
       text-align: center;
+      font-size: 1.5em;
+    }
+
+    .post-options {
+      float: right;
+      width: calc(100% - 55px);
+
+      button {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        margin: 10px 30px 0 0;
+        cursor: pointer;
+      }
+
+      .reply {
+        div {
+          float: left;
+          width: 18px;
+          height: 18px;
+          background-image: url('../images/reply.png');
+          background-size: cover;
+        }
+
+        span {
+          display: inline-block;
+          margin: 3px 0 0 5px;
+          font-size: 0.9em;
+          color: $twitter-gray;
+        }
+
+        &:hover {
+          span{
+            color: $twitter-logo-blue;
+          }
+
+          div{
+            background-image: url('../images/hover-reply.png');
+          }
+        }
+      }
+
+      .retweet {
+        div {
+          float: left;
+          width: 18px;
+          height: 18px;
+          background-image: url('../images/retweet.png');
+          background-size: cover;
+        }
+
+        span {
+          display: inline-block;
+          margin: 3px 0 0 5px;
+          font-size: 0.9em;
+          color: $twitter-gray;
+        }
+
+        &:hover {
+          span {
+            color: $retweeted;
+          }
+          
+          div{
+            background-image: url('../images/retweeted.png');
+          }
+        }
+      }
+
+      .favorite {
+        div {
+          float: left;
+          width: 18px;
+          height: 18px;
+          background-image: url('../images/favorite.png');
+          background-size: cover;
+        }
+
+        span {
+          display: inline-block;
+          margin: 3px 0 0 5px;
+          font-size: 0.9em;
+          color: $twitter-gray;
+        }
+
+        &:hover {
+          span {
+            color: $favorited;
+          }
+
+          div{
+            background-image: url('../images/favorited.png');
+          }
+        }
+      }
     }
   }
 }
