@@ -10,11 +10,11 @@ $white: #FFF;
 
 
 html, body {
-	font-family: $font-stack;
-	font-size: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: $twitter-background;
+  font-family: $font-stack;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $twitter-background;
 }
 
 .login-nav {
@@ -65,7 +65,7 @@ html, body {
       color: $twitter-black;
       // border: 0.04em solid lightgray;
       border: none;
-	  border-bottom: 0.04em solid $twitter-gray;
+    border-bottom: 0.04em solid $twitter-gray;
       border-radius: 3px;
       padding: 8px 6px;
       margin: 0 53% 15px 0;
@@ -137,11 +137,11 @@ html, body {
 
 
 body {
-	margin: 0;
+  margin: 0;
 }
 
 img {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

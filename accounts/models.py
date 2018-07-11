@@ -34,7 +34,10 @@ class Account(models.Model):
 		return static('img/default_header.png')
 
 	def __str__(self):
-		return self.user.first_name + " " + self.user.last_name
+		if len(self.user.first_name) < 1 or len(self.user.last_name) < 1:
+			return self.user.username
+		else:
+			return self.user.first_name + " " + self.user.last_name
 
 
 

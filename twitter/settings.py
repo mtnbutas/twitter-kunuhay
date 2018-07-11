@@ -129,3 +129,4 @@ LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'ck_static')
 
+CSRF_COOKIE_NAME = "csrftoken"
